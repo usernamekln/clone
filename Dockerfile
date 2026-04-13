@@ -1,5 +1,5 @@
 
-FROM python:3.13-25.10_stable
+FROM alpine:3.23
 
 WORKDIR /app
 
