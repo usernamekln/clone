@@ -1,10 +1,9 @@
-name: Docker CI
+name: Docker Build Pipeline
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   docker:
@@ -16,6 +15,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t myapp:latest .
-
-      - name: Show Docker images
-        run: docker images
